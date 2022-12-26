@@ -11,6 +11,7 @@
 - HTML5
 - CSS 
 - Flexbox
+- JavaScript
 
 ### What I learned
 
