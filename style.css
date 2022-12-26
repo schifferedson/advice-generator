@@ -41,6 +41,8 @@ body {
     font-size: 13px;
     line-height: 18px;
     font-weight: 800;
+    text-transform: uppercase; 
+    letter-spacing: 3.46px;
 }
 
 .container > h1 {
@@ -71,4 +73,14 @@ body {
 .dice:hover {
     box-shadow: 0px 0px 40px #53FFAA;
     transition: all .3s;
+}
+
+@media (max-width: 960px) {
+    .container > h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        padding: 40px 24px;
+    }
 }
