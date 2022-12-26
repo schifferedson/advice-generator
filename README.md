@@ -43,5 +43,5 @@ dice.addEventListener('click', getAdvice)
 
 ## Author
 
-- Frontend Mentor - [@@schifferedson]([https://www.frontendmentor.io/profile/yourusername](https://www.frontendmentor.io/profile/schifferedson)
+- Frontend Mentor - [@schifferedson]([https://www.frontendmentor.io/profile/yourusername](https://www.frontendmentor.io/profile/schifferedson)
 - Instagram - [@edsonschiffer]([https://www.twitter.com/yourusername](https://www.instagram.com/edsonschiffer/)
