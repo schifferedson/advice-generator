@@ -17,19 +17,28 @@
 
 With this project I was able to put asynchronous codes into practice and even practice a little DOM, in my early career these small projects are very important to fix what I learned and even learn to solve errors.
 
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+const dice = document.querySelector('.dice')
+const adviceText = document.querySelector('.container h1')
+const textId = document.getElementById('id')
+
+async function getAdvice() {
+    const apiUrl = `https://api.adviceslip.com/advice`
+    try {
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+
+        textId.textContent = `Advice #${data.slip.id}`;
+        adviceText.textContent = data.slip.advice;
+    } catch (error) {
+        console.log(error)
+    }
 }
+
+getAdvice()
+
+dice.addEventListener('click', getAdvice)
+
 ```
 
 
